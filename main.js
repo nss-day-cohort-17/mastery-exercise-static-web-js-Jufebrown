@@ -63,4 +63,5 @@ treeObj.character = document.getElementsByName("character").value;
 // Create a `tree` function that should build a pine tree out of a character in the Chrome dev tools console.
 function tree (treeObj) {
 
+  console.log(???????????)
 }
