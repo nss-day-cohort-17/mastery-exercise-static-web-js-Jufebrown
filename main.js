@@ -43,6 +43,13 @@ var treeObj = {
   character: "",
 }
 
+function inputCheck () {
+  if (document.getElementsByName("height") === "") {
+      alert("Both fields must have a value");
+  } else if (document.getElementsByName("character") === "") {
+      alert("Both fields must have a value");
+}
+
 // 1. The value for the height of the tree should be from user input in a `<input type="text">` field in the DOM.
 treeObj.height = document.getElementsByName("height").value;
 // 1. The character to use should be from user input in a `<input type="text">` field in the DOM.
