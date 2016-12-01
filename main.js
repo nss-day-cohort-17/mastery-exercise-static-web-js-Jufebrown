@@ -2,7 +2,7 @@
 
 // It is absolutely critical that you read each of these requirements because as a professional you will be expected to completely understand what you are expected to do. If you submit code that does not fulfill the requirements, you will be sent to your room with no dinner.
 
-// Create a `tree` function that should build a pine tree out of a character in the Chrome dev tools console.
+
 
 
 
@@ -47,3 +47,8 @@ var treeObj = {
 treeObj.height = document.getElementsByName("height").value;
 // 1. The character to use should be from user input in a `<input type="text">` field in the DOM.
 treeObj.character = document.getElementsByName("character").value;
+
+// Create a `tree` function that should build a pine tree out of a character in the Chrome dev tools console.
+function tree (treeObj) {
+
+}
