@@ -40,17 +40,37 @@ function inputCheck () {
     }
 }
 
+function spaces (currentHeight) {
+  for (var j = (treeObj.height - currentHeight); j >= 0; j--) {
+    console.log(" ");
+  }
+}
+
+function printChar (currentHeight) {
+  for (var k = 0; k < currentHeight; k = ((2*k)+1)) {
+    console.log(treeObj.character);
+  }
+}
+
 
 // Create a `tree` function that should build a pine tree out of a character in the Chrome dev tools console.
 function tree (treeObj) {
   for (var i = 0; i < treeObj.height; i++) {
-    console.log(treeObj.character)
+    spaces(i);
+    printChar(i);
+    console.log('\n');
    }
 
 }
 
+function enterCheck () {
+  console.log (keypress);
+}
 
 // Once the user enters in a number, and a character, the user can either then just press the enter key _(as long as the cursor is in one of the input fields)_, or click a button that is labeled "Grow your tree" and the tree should be shown in the console. This requires you to add an event listener to the button, as well as an event listener for the enter/return key.
-var buttonClick = document.getElementsByTagName("button").addEventListener('click', inputCheck);
-
-var enterHit = document.getElementsByTagName("input").addEventListener('keyup', enterCheck);
+var buttonClick = document.getElementById("button");
+buttonClick.addEventListener('click', inputCheck);
+var heightEnter = document.getElementsByName("height");
+var charEnter = document.getElementsByName("height");
+heightEnter.addEventListener('keyup', enterCheck);
+charEnter.addEventListener('keyup', enterCheck);
