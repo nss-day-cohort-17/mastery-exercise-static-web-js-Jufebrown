@@ -31,7 +31,7 @@ function inputCheck () {
     character: "",
   }
   // 1. The value for the height of the tree should be from user input in a `<input type="text">` field in the DOM.
-  treeObj.height = document.getElementsByName("height").value;
+  treeObj.height = parseInt(document.getElementsByName("height").value);
   // 1. The character to use should be from user input in a `<input type="text">` field in the DOM.
   treeObj.character = document.getElementsByName("character").value;
   if (document.getElementsByName("height") === "") {
