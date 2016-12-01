@@ -57,4 +57,6 @@ function tree (treeObj) {
   console.log(???????????)
 }
 
-var buttonClick = document.getElementsByTagName("button").addEventListener('click', inputCheck)
+var buttonClick = document.getElementsByTagName("button").addEventListener('click', inputCheck);
+
+var enterHit = document.getElementsByTagName("input").addEventListener('keyup', enterCheck);
