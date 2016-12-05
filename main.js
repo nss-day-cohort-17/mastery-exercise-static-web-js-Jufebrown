@@ -15,6 +15,9 @@
 //  ***********
 // *************
 // ```
+var button = document.getElementById("button");
+var heightEnter = document.getElementById("height");
+var charEnter = document.getElementById("character");
 
 
 
@@ -57,7 +60,6 @@ function tree (treeObj) {
 
 function enterCheck (keyboardEvent) {
   event.preventDefault();
-  console.log(keyboardEvent)
   if (keyboardEvent.key === "Enter") {
     inputCheck();
   }
@@ -66,9 +68,6 @@ function enterCheck (keyboardEvent) {
 
 
 // Once the user enters in a number, and a character, the user can either then just press the enter key _(as long as the cursor is in one of the input fields)_, or click a button that is labeled "Grow your tree" and the tree should be shown in the console. This requires you to add an event listener to the button, as well as an event listener for the enter/return key.
-var button = document.getElementById("button");
 button.addEventListener('click', inputCheck);
-var heightEnter = document.getElementById("height");
-var charEnter = document.getElementById("character");
 heightEnter.addEventListener('keyup', enterCheck);
 charEnter.addEventListener('keyup', enterCheck);
